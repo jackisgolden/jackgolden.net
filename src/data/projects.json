@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Project One",
+      "description": "## This is Project One\nIt is a great project that does many amazing things.",
+      "image": "./assets/linearPreview.gif"
+    },
+    {
+      "title": "Project Two",
+      "description": "## This is Project Two\nAnother amazing project with excellent features.",
+      "image": "/assets/instrumPreview.gif"
+    }
+  ]
+  

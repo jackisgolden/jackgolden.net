@@ -1,0 +1,16 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    color: black; /* Updated text color for better visibility without background */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .header p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
