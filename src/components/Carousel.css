@@ -1,39 +1,64 @@
 .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1); /* Modern drop shadow */
-    padding: 20px;
-    margin: 20px 0; 
-    max-width: 800px;
-  }
-  
-  .carousel {
-    position: relative;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px; /* Rounded corners for the images */
-  }
-  
-  .project-links {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .project-links button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px; /* Rounded corners for the buttons */
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .project-links button:hover {
-    background-color: #555;
-  }
-  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 800px;
+  min-width: 200px;
+  min-height: 400px;
+  perspective: 1000px;
+  display: flex; /* Add flexbox */
+  align-items: center; /* Center items vertically */
+}
+
+.carousel {
+  flex: 1; /* Allow it to take the available space */
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in-out;
+  max-width: 50%; /* Limit the width */
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  position: absolute;
+  animation-play-state: paused;
+}
+
+.carousel-image.frozen {
+  animation-play-state: paused;
+}
+
+.project-info {
+  flex: 0; /* Allow it to take the available space */
+  max-width: 50%; /* Limit the width */
+  padding-left: 20px; /* Space between the carousel and text */
+  text-align: left; /* Align text to the left */
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: blue;
+}

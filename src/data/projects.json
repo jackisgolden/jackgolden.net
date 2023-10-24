@@ -1,13 +1,13 @@
 [
     {
-      "title": "Project One",
+      "title": "Drawing Cartesian Products",
       "description": "## This is Project One\nIt is a great project that does many amazing things.",
-      "image": "./assets/linearPreview.gif"
+      "image": "./assets/gif/linearPreview.gif"
     },
     {
-      "title": "Project Two",
+      "title": "Stringed Instrument Visualizer",
       "description": "## This is Project Two\nAnother amazing project with excellent features.",
-      "image": "/assets/instrumPreview.gif"
+      "image": "/assets/gif/instrumPreview.gif"
     }
   ]
   
