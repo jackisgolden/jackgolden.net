@@ -21,11 +21,13 @@ branch `main`, also live at jackgolden-net.pages.dev). There is no origin
 server — nothing to keep alive. Migrated 2026-08-24 after the old
 DigitalOcean droplet origin died unnoticed (months of 522s).
 
-Deploy from this repo:
+The live site is the static HTML in `jackisgolden/jackisgolden.github.io`
+(`~/jackisgolden.github.io`), not this Vite repo. Posts live under
+`writing/<slug>/index.html`, linked from the homepage. Deploy that directory:
 
 ```bash
-npm run build     # tsc && vite build -> dist/
-wrangler pages deploy dist --project-name=jackgolden-net --branch=main --commit-dirty=true
+cd ~/jackisgolden.github.io
+wrangler pages deploy . --project-name=jackgolden-net --branch=main --commit-dirty=true
 ```
 
 ## DNS via the API
